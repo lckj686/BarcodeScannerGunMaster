@@ -24,14 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
-        Log.d("scan", "event= " + event);
+        Log.d(TAG, "event= " + event);
 
         if (scannerGunManager.dispatchKeyEvent(event)) {
             return true;
         }
-        // return true;
-        return super.dispatchKeyEvent(event);
 
+        return super.dispatchKeyEvent(event);
     }
 
 

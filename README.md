@@ -15,13 +15,13 @@ android 设备外接一个 标准扫码枪，要把扫码枪扫到的内容取�
 在Activity 的dispatchKeyEvent 方法中把 KeyEvent  log 打印了下：（只打出action=ACTION_UP 躺起的log，按下action=ACTION_DOWN 是结队的 忽略）
 
  - 3.1、android 设备软键盘的log
-![在这里插入图片描述](https://img-blog.csdn.net/20181024151230439?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xja2o2ODY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![在这里插入图片描述](image/inputkey.png)
 
  - 3.2、外接扫码枪的log （新大陆的NLS-FR40）
- ![在这里插入图片描述](https://img-blog.csdn.net/20181024151415991?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xja2o2ODY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+ ![在这里插入图片描述](image/scanner.png)
 
  - 3.2、外接键盘的log （普通的键盘）
-![在这里插入图片描述](https://img-blog.csdn.net/20181024151452348?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xja2o2ODY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![在这里插入图片描述](image/keyboard.png)
 这里附一句，若小键盘的num按钮锁住，metaState= meta_num_lock_on
 
 对比结论小结：

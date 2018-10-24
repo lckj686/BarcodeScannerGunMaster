@@ -26,7 +26,6 @@ public class ScannerGunManager {
      */
     public boolean dispatchKeyEvent(KeyEvent event) {
 
-
         /**
          * 系统的软键盘  按下去是 -1, 不管，不拦截
          */
@@ -34,11 +33,9 @@ public class ScannerGunManager {
             return false;
         }
 
-
         //按下弹起，识别到弹起的话算一次 有效输入
         //只要是 扫码枪的事件  都要把他消费掉 不然会被editText 显示出来
         if (event.getAction() == KeyEvent.ACTION_UP) {
-
 
             //只要数字，一维码里面没有 字母
             int code = event.getKeyCode();
@@ -58,7 +55,6 @@ public class ScannerGunManager {
 
         }
         //都是扫码枪来的事件，选择消费掉
-
 
         return isInterrupt;
     }
